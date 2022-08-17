@@ -42,14 +42,14 @@ function addBookToLibrary(title, author, pages, readStatus){
     </td>
     <td><button class="delete">${"Delete"}</button></td>
     `;
-  }
   let remove = document.querySelectorAll(".delete");
   remove.forEach(function(element){
     element.onclick = function(){
       let grandpa = this.parentElement.parentElement;
       grandpa.remove();
-    }
-})
+     }
+  })
+}
 
 
 
